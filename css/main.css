@@ -46,6 +46,7 @@ section {
   margin-left: 260px;
   height: 100vh;
   display: flex;
+  width: 2048px;
   flex-direction: column;
   justify-content: center;
 }
