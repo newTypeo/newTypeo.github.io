@@ -116,7 +116,8 @@ footer i:hover {transform: translate(0, -3px);}
   float: none;
   border: 1px solid black;
 }
-.interests-wrapper img:hover {opacity: 70%;}
+.interests-wrapper img{opacity: 80%;}
+.interests-wrapper img:hover {opacity: 100%;}
 .interests div p {
   display: inline-block;
   font-size: 20px;
