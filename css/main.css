@@ -1,0 +1,163 @@
+body {margin: 0;}
+
+/* 프로필 이미지 */
+.img {justify-content: center;}
+#profile-img {
+width: 150px;
+height: 150px;
+border: 1px solid #204520;
+transform: scale(1); /* 이미지 사이즈 고정 */
+border-radius: 30%;
+box-shadow: 5px 5px 5px black;
+
+}
+
+.menu-bar {
+  position: fixed;
+  border: 0;
+  background-color: #2a6447;
+  display: block;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* 목차 */
+.index h3 {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 목차 각 항목 반응형 커서 */
+.index h3:hover {
+  font-size: 1.1em;
+  opacity: 1;
+  text-shadow: 2px 2px 1px #0c200d;
+}
+section {
+  margin-left: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  margin: 0;
+}
+
+/* ABOUT part*/
+
+.name {font-size: 65px; font-weight: 900; font-family: 'Oswald', sans-serif;}
+.contacts {font-size: 15px; opacity: 0.5; font-style: italic;}
+.main-introduction {font-size: 21px; opacity: 0.8; font-family: 'SUITE-Regular';}
+/* sns 픽토그램 */
+.fa-brands {color: black; opacity: 0.4;}
+.fa-solid {color: black; opacity: 0.4;}
+.sns-pictogram i {margin-right: 40px;}
+/*픽토그램 반응형 커서*/
+footer i:hover {transform: translate(0, -3px);}
+
+/* EXPERIENCE part */
+
+.experience-wrapper img {
+  margin-right: 7px;
+  margin-top:10px;
+  border: 7px;
+  border-style: solid;
+  border-color: rgba(236, 213, 213, 0.644);
+  border-image-outset: 10px;
+  border-radius: 10%;
+  width: 400px;
+  height: 300px;
+  transition: all 0.1s ease-in;
+  box-shadow: 4px 4px 4px pink;
+}
+/* 커서 올릴 시 이미지 크게(모든 이미지 파일에 적용) */
+.experience-wrapper img:hover {
+  transform: scale(2);
+  -webkit-transform: scale(2); /* 크롬 */
+  z-index: 1;
+  align-items: center;
+}
+.experience-wrapper {
+  font-size: 21px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* 한샘로고 */
+.hanssemlogo {width: 150px;}
+.period-of-work {
+  font-style:italic;
+  color: #585958;
+  font-size: 13px;
+}
+.experience-title {
+  text-align: right;
+  display: inline;
+  width: 1650px;
+}
+
+
+/* INTERESTS part */
+.interests-wrapper {display: inline;}
+.interests-wrapper img {
+  display: inline;
+  width: 270px;
+  margin: 4px;
+  box-shadow: 5px 5px 5px black;
+  float: none;
+  border: 1px solid black;
+}
+.interests-wrapper img:hover {opacity: 70%;}
+.interests div p {
+  display: inline-block;
+  font-size: 20px;
+  width: 300px;
+  color: #000000;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ROADMAP part */
+.rm-wrapper iframe {width: 97%; height: 97%;}
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rm-wrapper .rm-firstHide {display: none;}
+.rm-wrapper {height: 100%;}
+.rm-ol {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* 메인축(row): 좌우간 간격 및 정렬 */
+  align-items: center; /* 크로스축(column): 꼬치의 가로축을 조정 */
+  flex-wrap: wrap; /* 자리가 부족하면 줄바꿈 여부 */
+  align-content: center; /* 메인축이 2개 이상인 경우 크로스축방향 배치 설정 */
+}
+.rm-li {
+  padding: 3px;
+  border: 3px solid rgb(51, 49, 52);
+  background-color: rgba(65, 220, 93, 0.775);
+  width: 95px;
+}
+.rm-ol div:hover {cursor: pointer;} 
+.rm-li div {
+  text-decoration: none;
+  display: block;
+  color: #000;
+  padding: 2px;
+  text-align: center;
+}
